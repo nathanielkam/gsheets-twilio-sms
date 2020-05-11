@@ -1,5 +1,5 @@
 function sendSms(to, body) {
-  var messages_url = "https://api.twilio.com/2010-04-01/Accounts/ACCOUNT_ID/Messages.json";
+  var messages_url = "https://api.twilio.com/2010-04-01/Accounts/ACCOUNT_SID/Messages.json";
 
   var payload = {
     "To": to,
@@ -13,7 +13,7 @@ function sendSms(to, body) {
   };
 
   options.headers = { 
-    "Authorization" : "Basic " + Utilities.base64Encode("AUTHORIZATION_ID")
+    "Authorization" : "Basic " + Utilities.base64Encode("ACCOUNT_SID:AUTH_TOKEN")
   };
 
   UrlFetchApp.fetch(messages_url, options);
