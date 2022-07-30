@@ -1,3 +1,5 @@
+For a complete overview of how this code was developed and how to use it check out - https://nathanielkam.com/send-mass-personalized-sms-using-twilio-and-google-sheets/
+
 # gsheets-twilio-sms
 Send SMS from google sheets using app script. With just two functions you can start sending mass text today.
 
